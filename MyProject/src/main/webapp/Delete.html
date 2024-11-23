@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .form-container {
+            width: 40%;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .form-container label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Employee Deletion</h2>
+    
+    <div class="form-container">
+        <form action="delete" method="post">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter Employee ID" required>
+
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+
+</body>
+</html>
